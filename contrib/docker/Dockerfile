@@ -1,6 +1,6 @@
 FROM debian:buster
 RUN apt-get -y update && apt-get -y install build-essential git lsb-release make python3 python3-pip
-RUN cd /usr/src && git clone https://github.com/allwaysbeginner-com/mytwc
+RUN cd /usr/src && git clone https://github.com/allwaysbeginner-com/mytwc.git 
 RUN cd /usr/src/TWCManager && make SUDO=""
 
 VOLUME /etc/twcmanager
