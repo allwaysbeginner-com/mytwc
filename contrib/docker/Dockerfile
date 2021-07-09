@@ -8,4 +8,5 @@ WORKDIR /usr/src/TWCManager
 
 COPY entrypoint.sh ./entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]
-CMD ["/usr/bin/python3","TWCManager.py"]
+#CMD ["/usr/bin/python3","TWCManager.py"]
+CMD ["/usr/bin/bash"]
